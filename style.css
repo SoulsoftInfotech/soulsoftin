@@ -64,3 +64,72 @@ header img {
   content: "";
   animation: changetext 5s infinite linear;
 }
+
+.change {
+  animation-name: MoveUpDown;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes MoveUpDown {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-25px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.top {
+  margin-top: -50px;
+}
+
+.videoContent h1 {
+  align-items: center;
+  color: #fff;
+  display: flex;
+  font-size: 4rem;
+  height: 100%;
+  justify-content: center;
+  left: 10%;
+  margin: auto;
+  opacity: 1;
+  padding: 1rem;
+  position: absolute;
+  text-align: center;
+  width: 80%;
+  z-index: 1;
+}
+
+video {
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.9;
+  width: 100%;
+}
+
+@media only screen and (max-width: 425px) {
+  .mobilevideoContent h1 {
+    color: #fff;
+    font-size: 15px;
+    height: 20%;
+    left: 12%;
+    margin: 5rem auto auto;
+    opacity: 1;
+    padding: 1rem;
+    position: absolute;
+    text-align: center;
+    width: 80%;
+    z-index: 1;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .videoContent h1 {
+    font-size: 3rem;
+  }
+}

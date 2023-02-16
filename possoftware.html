@@ -27,21 +27,23 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet" />
+  <link href="./style.css" rel="stylesheet" />
 </head>
 
 <body>
+
+
+  <!-- header section  -->
   <header id="header" class="fixed-top bg-gradient-to-r from-fuchsia-50 to-sky-50">
     <div class="container d-flex align-items-center justify-content-between">
-      <img src="./assets/img/logopng.png" alt="" class="h-20" />
+      <img src="./assets/img/logopng.png" alt="" class="" href="./index.html">
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li>
-            <a class="nav-link scrollto active" href="./index.html">Home</a>
-          </li>
-          <li><a class="nav-link scrollto" href="./index.html">About</a></li>
+          <li><a class="nav-link scrollto active" href="./index.html#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="./index.html#about">About</a></li>
 
           <li class="dropdown">
             <a href="#"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
@@ -56,45 +58,45 @@
           <li class="dropdown">
             <a href="#"><span>Our Products</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li>
-                <a href="./product1.html">Account and Billing Software(Shopcare)</a>
-              </li>
+              <li><a href="./product1.html">Account and Billing Software(Shopcare)</a></li>
 
-              <li>
-                <a href="./prduct2.html">Agro mall and Herbs Software(Shetkari)</a>
-              </li>
-              <li>
-                <a href="./prduct3.html">Billing,Inventory and Account Software(Kirana Bazar)</a>
-              </li>
-              <li>
-                <a href="./prduct4.html">Pharmacy Billing Software (Pharma Chemist Vision)</a>
-              </li>
+              <li><a href="./prduct2.html">Agro mall and Herbs Software(Shetkari)</a></li>
+              <li><a href="./prduct3.html">Billing,Inventory and Account Software(Kirana Bazar)</a></li>
+              <li><a href="./prduct4.html">Pharmacy Billing Software (Pharma Chemist Vision)</a></li>
             </ul>
           </li>
-          <li>
-            <a class="nav-link scrollto" href="./index.html">Contact</a>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="nav-link scrollto" href="./career.html">Career</a></li>
+          <li><a class="nav-link scrollto" href="https://www.youtube.com/@soulsoftinfotech2503">Tutorials</a></li>
+          <li><a class="nav-link scrollto" href="./download.html">Downloads</a></li>
+          <li class="dropdown">
+          <li class="dropdown">
+            <a href="#"><span>Sign Up</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="./cSignIn.html">Log in(As Cutomer)</a></li>
+
+              <li><a href="./adminSign.html">Log in(As Admin)</a></li>
+            </ul>
           </li>
-          <li>
-            <a class="nav-link scrollto" href="./tutorials.html">Tutorials</a>
-          </li>
-          <li>
-            <a class="nav-link scrollto" href="./career.html">Career</a>
-          </li>
+
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
+
     </div>
   </header>
 
+
   <!-- Product Data -->
-  <section class="text-gray-600 body-font">
-    <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-        <img class="object-cover object-center rounded w-400" alt="hero"
-          src="./assets/img/21034578 [Converted] (1).png" />
+  <section class="text-gray-600 bg-gradient-to-r from-purple-50 to-pink-50">
+    <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center" data-aos="fade-up">
+      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0" data-aos="flip-up">
+        <img class="change object-cover object-center rounded w-400" alt="hero"
+          src="./assets/img/Untitled design (3).png" />
       </div>
       <div
-        class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center justify-center">
+        class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center justify-center"
+        data-aos="fade-left">
         <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 hover:bg-blue-100">
           POS(Point of Sales System) System Software
         </h1>
@@ -125,5 +127,8 @@
 <!-- Template Main JS File -->
 <script src="assets/js/main.js"></script>
 <script src="./index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="assets/js/main.js"></script>
+<script src="https://cdn.tailwindcss.com"></script>
 
 </html>
