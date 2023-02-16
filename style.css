@@ -1,0 +1,66 @@
+* {
+  font-family: "inter", "Courier New", Courier, monospace;
+}
+
+header img {
+  height: 50px;
+  width: 100px;
+}
+
+.ok {
+  animation-name: MoveUpDown;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes MoveUpDown {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-25px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.ani img:hover {
+  scale: 1.1;
+}
+
+.dis p:hover {
+  scale: 1.05;
+  color: rgb(34, 130, 255);
+}
+
+.back-video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .back-video {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  .back-video {
+    width: auto;
+    height: 100%;
+  }
+}
+
+.abouts:hover {
+  --webkit-text-stroke: 2px #fff;
+  color: transparent;
+}
+
+.change_content:after {
+  content: "";
+  animation: changetext 5s infinite linear;
+}
