@@ -1,8 +1,7 @@
-let shopcareP = 1200
-let shetkariP = 1200
-let kiranabazarP = 1200
-let pharmachemistP = 1200
+var typed = new Typed(".change_contents",{
+    strings:["Software","Website","App"],
+    typeSpeed:150,
+    backSpeed:150,
+    loop:true
 
-
-let changeValue = document.getElementById("bn")
-console.log(changeValue)
+})
