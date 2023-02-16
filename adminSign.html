@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Favicons -->
+    <link href="assets/img/logopng.png" rel="icon" />
+    <link href="assets/img/logopng.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header
+      id="header"
+      class="fixed-top bg-gradient-to-r from-fuchsia-50 to-sky-50"
+    >
+      <div class="container d-flex align-items-center justify-content-between">
+        <img src="./assets/img/logopng.png" alt="" class="logo" />
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li>
+              <a class="nav-link scrollto active" href="./index.html">Home</a>
+            </li>
+            <li><a class="nav-link scrollto" href="#about">About</a></li>
+
+            <li class="dropdown"></li>
+            <li class="dropdown">
+              <a href="#"
+                ><span>Our Products</span> <i class="bi bi-chevron-down"></i
+              ></a>
+              <ul>
+                <li>
+                  <a href="./product1.html"
+                    >Account and Billing Software(Shopcare)</a
+                  >
+                </li>
+
+                <li>
+                  <a href="./prduct2.html"
+                    >Agro mall and Herbs Software(Shetkari)</a
+                  >
+                </li>
+                <li>
+                  <a href="./prduct3.html"
+                    >Billing,Inventory and Account Software(Kirana Bazar)</a
+                  >
+                </li>
+                <li>
+                  <a href="./prduct4.html"
+                    >Pharmacy Billing Software (Pharma Chemist Vision)</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+            <li>
+              <a class="nav-link scrollto" href="./career.html">Career</a>
+            </li>
+            <li>
+              <a class="nav-link scrollto" href="./tutorials.html">Tutorials</a>
+            </li>
+            <li>
+              <a class="nav-link scrollto" href="./download.html">Downloads</a>
+            </li>
+            <li class="dropdown"></li>
+            <li class="dropdown">
+              <a href="#"
+                ><span>Sign Up</span> <i class="bi bi-chevron-down"></i
+              ></a>
+              <ul>
+                <li>
+                  <a href="./cSignIn.html">Log in(As Cutomer)</a>
+                </li>
+
+                <li>
+                  <a href="./adminSign.html">Log in(As Admin)</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+      </div>
+    </header>
+
+    <!-- form section  -->
+    <!-- Default form login -->
+    
+
+    
+    <form
+      class="text-center border border-light p-5"
+      action="adminLogin.php"
+      method="POST"
+    >
+    <div class="d-flex flex-col justify-center align-items-center">
+      <div class="container mt-14">
+        <h1 class="text-center">Sign in For Admin</h1>
+      </div>
+      <!-- Email -->
+      <div class="col-8">
+        <input
+          type="email"
+          name="email"
+          id="defaultLoginFormEmail"
+          class="form-control mt-5 mb-3"
+          placeholder="E-mail"
+        />
+      </div>
+
+      <!-- Password -->
+      <div class="col-8">
+        <input
+          type="password"
+          name="password"
+          id="defaultLoginFormPassword"
+          class="form-control mb-4"
+          placeholder="Password"
+        />
+      </div>
+
+      <div class="d-flex justify-content-around">
+        <div>
+          <!-- Remember me -->
+          
+        </div>
+        <div>
+          <!-- Forgot password -->
+          
+        </div>
+      </div>
+
+      <!-- Sign in button -->
+      <button class="btn btn-primary btn-block my-4" type="submit">
+        Sign in
+      </button>
+    </div>
+  </div>
+
+      <!-- Register -->
+
+      <!-- Social login -->
+
+      <a href="#" class="mx-2" role="button"
+        ><i class="fab fa-facebook-f light-blue-text"></i
+      ></a>
+      <a href="#" class="mx-2" role="button"
+        ><i class="fab fa-twitter light-blue-text"></i
+      ></a>
+      <a href="#" class="mx-2" role="button"
+        ><i class="fab fa-linkedin-in light-blue-text"></i
+      ></a>
+      <a href="#" class="mx-2" role="button"
+        ><i class="fab fa-github light-blue-text"></i
+      ></a>
+
+    </form>
+  </body>
+</html>
