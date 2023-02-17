@@ -115,7 +115,7 @@ video {
 }
 
 @media only screen and (max-width: 425px) {
-  .mobilevideoContent h1 {
+  .videoContent h1 {
     color: #fff;
     font-size: 15px;
     height: 20%;
@@ -135,3 +135,5 @@ video {
     font-size: 3rem;
   }
 }
+
+
