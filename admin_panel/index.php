@@ -221,13 +221,15 @@ include('../config.php');
                                                 <th><?php echo $row['email']; ?></th>
                                                 <th><?php echo $row['time']; ?></th>
                                                 <th>
-                                                    <a href="../auth.php?userid=<?php echo $row['id']; ?>">
-                                                        <button class="btn btn-primary btn-sm">Approve</button>
-                                                    </a>
-                                                    <form action="./decline.php" method="post">
+                                                    <div class="d-flex">
+                                                        <a href="../auth.php?userid=<?php echo $row['id']; ?>">
+                                                            <button class="btn btn-primary btn-sm">Approve</button>
+                                                        </a>
+                                                        <form action="./decline.php" method="post">
 
-                                                        <button class=" btn btn-danger btn-sm" name="delete" value="<?php echo $row['id'] ?>">X</button>
-                                                    </form>
+                                                            <button class=" btn btn-danger btn-sm ml-3" name="delete" value="<?php echo $row['id'] ?>">X</button>
+                                                        </form>
+                                                    </div>
 
                                                 </th>
 
