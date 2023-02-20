@@ -1,30 +1,24 @@
 <?php
 include('../config.php');
 
-?>
-
-
-<?php
 
 
 
 
 
-if (isset($_POST['decline'])) {
-    $id = $_POST['id'];
-    $declinenewusers = "DELETE FROM `reg` WHERE id='$id'";
+if (isset($_GET['userid'])) {
+    $userid = $_GET['userid'];
+    // $declinenewusers = "UPDATE `customer_registration` SET `status`='2'";
+    $declinenewusers = "UPDATE `customer_registration` SET `status`='2' WHERE `id`='$userid'";
     $result = mysqli_query($con, $declinenewusers);
 
 
-    if ($result) {
-        echo '<script> alert("Data Deleted"); </script>';
-        echo $row['id'];
+    if ($result == true) {
+        echo '<script>alert("User decline")</script>';
         header("location:./index.php");
     } else {
-        echo '<script> alert("Data not Deleted"); </script>';
+        echo "Somthing error";
     }
 }
 
 ?>
-
-<h3>User declined</h3>

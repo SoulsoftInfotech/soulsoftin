@@ -15,7 +15,7 @@ if ($email == $data && $password == "$data2") {
 } else {
     // echo "Going for customers";
 
-    $checklogin = "SELECT * FROM `reg` WHERE `email`='$email' AND `password`='$encypassword' AND `status`='1'";
+    $checklogin = "SELECT * FROM `customer_registration` WHERE `email`='$email' AND `password`='$encypassword' AND `status`='1'";
 
     $result = mysqli_query($con, $checklogin);
 

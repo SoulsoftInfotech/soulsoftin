@@ -107,6 +107,10 @@ include('../config.php');
                             <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                             Approved Customer
                         </a>
+                        <a class="nav-link" href="./tables2.php">
+                            <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                            Declined Customer
+                        </a>
                     </div>
                 </div>
                 <div class="sb-sidenav-footer">
@@ -183,7 +187,7 @@ include('../config.php');
                     <div class="card mb-4">
                         <div class="card-header">
                             <i class="fas fa-table me-1"></i>
-                            DataTable Example
+                            Pending User Login's 
                         </div>
                         <div class="card-body">
                             <table id="datatablesSimple">
@@ -202,7 +206,7 @@ include('../config.php');
 
                                     <?php
 
-                                    $selectnewusers = "SELECT * FROM `reg` WHERE `status`='0'";
+                                    $selectnewusers = "SELECT * FROM `customer_registration` WHERE `status`='0'";
 
 
 
@@ -225,10 +229,10 @@ include('../config.php');
                                                         <a href="../auth.php?userid=<?php echo $row['id']; ?>">
                                                             <button class="btn btn-primary btn-sm">Approve</button>
                                                         </a>
-                                                        <form action="./decline.php" method="post">
+                                                        <a href="./decline.php?userid=<?php echo $row['id']; ?>">
 
-                                                            <button class=" btn btn-danger btn-sm ml-3" name="delete" value="<?php echo $row['id'] ?>">X</button>
-                                                        </form>
+                                                            <button class=" btn btn-danger btn-sm ml-3" name="delete">X</button>
+                                                        </a>
                                                     </div>
 
                                                 </th>
@@ -245,14 +249,7 @@ include('../config.php');
 
 
                                     ?>
-                                    <!-- <tr>
-                                            <td>Tiger Nixon</td>
-                                            <td>System Architect</td>
-                                                <td>Edinburgh</td>
-                                                <td>61</td>
-                                                <td>2011/04/25</td>
-                                            <td>$320,800</td>
-                                        </tr> -->
+                    
 
                                 </tbody>
                             </table>

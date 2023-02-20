@@ -155,7 +155,7 @@ include('../config.php');
                                 <tbody>
                                     <?php
 
-                                    $selectnewusers = "SELECT * FROM `customer_registration` WHERE `status`='1'";
+                                    $selectnewusers = "SELECT * FROM `customer_registration` WHERE `status`='2'";
 
 
 
@@ -172,8 +172,8 @@ include('../config.php');
                                                 <th><?php echo $row['mobNum']; ?></th>
                                                 <th><?php echo $row['email']; ?></th>
                                                 <th><?php echo $row['time']; ?></th>
-                                                <th><a href="./decline.php?userid=<?php echo $row['id']; ?>">
-                                                    <button class="btn btn-danger btn-sm" >Decline</button>
+                                                <th><a href="../auth.php?userid=<?php echo $row['id']; ?>">
+                                                    <button class="btn btn-primary btn-sm">Approve</button>
                                                 </a></th>
 
 
