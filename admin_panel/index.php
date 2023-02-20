@@ -190,6 +190,7 @@ include('../config.php');
                                 <!-- <table> -->
                                 <thead>
                                     <tr>
+                                        <th>id</th>
                                         <th>Name</th>
                                         <th>Mob</th>
                                         <th>Email</th>
@@ -214,13 +215,20 @@ include('../config.php');
                                     if (mysqli_num_rows($result) > 0) {
                                         while ($row = mysqli_fetch_assoc($result)) { ?>
                                             <tr>
+                                                <th><?php echo $row['id']; ?></th>
                                                 <th><?php echo $row['fname'] . " " . $row['lname']; ?></th>
                                                 <th><?php echo $row['mobNum']; ?></th>
                                                 <th><?php echo $row['email']; ?></th>
                                                 <th><?php echo $row['time']; ?></th>
                                                 <th>
-                                                    <a href="../auth.php?userid=<?php echo $row['id']; ?>"><button class="btn btn-primary btn-sm">Approve</button></a>
-                                                    <button class="btn btn-danger"></button>
+                                                    <a href="../auth.php?userid=<?php echo $row['id']; ?>">
+                                                        <button class="btn btn-primary btn-sm">Approve</button>
+                                                    </a>
+                                                    <form action="./decline.php" method="post">
+
+                                                        <button class=" btn btn-danger btn-sm" name="delete" value="<?php echo $row['id'] ?>">X</button>
+                                                    </form>
+
                                                 </th>
 
                                             </tr>
