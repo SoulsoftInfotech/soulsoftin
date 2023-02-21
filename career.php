@@ -1,3 +1,10 @@
+<?php
+include('./config.php');
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,8 +14,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
 
   <!-- Favicons -->
   <link href="assets/img/logopng.png" rel="icon" />
@@ -71,8 +77,7 @@
             <li><a class="nav-link scrollto" href="./career.html">Career</a></li>
             <li><a class="nav-link scrollto" href="https://www.youtube.com/@soulsoftinfotech2503">Tutorials</a></li>
             <li><a class="nav-link scrollto" href="http://soulsoftinfotech.com/Downloads.html">Downloads</a></li>
-            <a href="./adminSign.html"><button type="button" class="btn btn-outline-primary btn-rounded btn-sm"
-                data-mdb-ripple-color="dark">Sign In</button></a>
+            <a href="./adminSign.html"><button type="button" class="btn btn-outline-primary btn-rounded btn-sm" data-mdb-ripple-color="dark">Sign In</button></a>
 
 
           </ul>
@@ -87,14 +92,67 @@
 
 
   <!-- hero section  -->
-  <div class="row justify-content-center">
+  <!-- <div class="row justify-content-center">
     <div class="col-xl-10">
       <div class="">
+        
 
       </div>
 
     </div>
-  </div>
+  </div> -->
+
+  <div class="container">
+    <div class="text-center mb-5">
+      <h3 class="text-4xl">Jobs openning</h3>
+    </div>
+
+
+    <?php
+
+
+
+    $selectjob = "SELECT * FROM `job_portal` WHERE `status`='0'";
+
+
+
+    // perform query against database in php
+    $result = mysqli_query($con, $selectjob);
+    // echo $result;
+
+
+
+    // mysqli count rows in data base
+    if (mysqli_num_rows($result) > 0) {
+      while ($row = mysqli_fetch_assoc($result)) { ?>
+        <div class="card mb-3">
+
+          <div class="card-body">
+            <div class="d-flex flex-column flex-lg-row text-center">
+              <span class="avatar avatar-text rounded-3 me-4 mb-2">Job ID <br class="font-semibold"><?php echo $row['jobID']; ?></span>
+
+              <div class="row flex-fill">
+                <div class="col-5 text-center">
+                  <h4 class="h5 font-semibold"><?php echo $row['jobRole']; ?></h4>
+                  <span>Date before apply <br><?php echo $row['date']; ?></span>
+                </div>
+                <div class="col-4 py-2">
+                  <p><?php echo $row['jobDesc']; ?></p>
+                </div>
+                <div class="col-3 text-lg-end">
+                  <a href="#" class="btn btn-primary stretched-link">Apply</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    <?php
+
+      }
+    }
+
+    ?>
 
 
 
@@ -117,24 +175,21 @@
 
 
 
+    <!-- javascript file  -->
 
 
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
 
-  <!-- javascript file  -->
-
-
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="assets/js/main.js"></script>
+    <!-- Template Main JS File -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>

@@ -55,8 +55,8 @@ include('../config.php');
                             <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                             Dashboard
                         </a>
-                        
-                       
+
+
                         <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
                                 <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">
@@ -84,7 +84,7 @@ include('../config.php');
                             </nav>
                         </div>
                         <div class="sb-sidenav-menu-heading">Tables</div>
-                        
+
                         <a class="nav-link" href="./tables.php">
                             <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                             Approved Customer
@@ -112,13 +112,13 @@ include('../config.php');
                     <ol class="breadcrumb mb-4">
                         <li class="breadcrumb-item active">Dashboard</li>
                     </ol>
-                    
-                    
-                    
+
+
+
                     <div class="card mb-4">
                         <div class="card-header">
                             <i class="fas fa-table me-1"></i>
-                            Pending User 
+                            Pending User
                         </div>
                         <div class="card-body">
                             <table id="datatablesSimple">
@@ -180,7 +180,7 @@ include('../config.php');
 
 
                                     ?>
-                    
+
 
                                 </tbody>
                             </table>
