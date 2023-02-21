@@ -21,9 +21,3 @@ if (mysqli_query($con, $data)) {
 }else {
     echo "Somthing error";
 }
-
-
-
-
-?>
-

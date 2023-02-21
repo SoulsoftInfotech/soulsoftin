@@ -1,6 +1,6 @@
 <?php
 session_start();
-$con = mysqli_connect("localhost", "root", "", "soulsoftin");
+$con = mysqli_connect("soulsoft.in", "root", "", "soulsoftin");
 
 // Check connection
 if (mysqli_connect_errno()) {
