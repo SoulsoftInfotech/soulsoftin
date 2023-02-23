@@ -16,8 +16,8 @@ $data = "INSERT INTO job_portal ( `jobId`, `jobRole`, `jobDesc`, `date`) VALUES 
 
 
 if (mysqli_query($con, $data)) {
-    echo'<script>alert("JOB added to portal")</script>';
+    echo '<script>alert("JOB added to portal")</script>';
     header('location:jobForm.php');
-}else {
+} else {
     echo "Somthing error";
 }
