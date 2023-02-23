@@ -41,6 +41,17 @@
 </head>
 
 <body>
+
+
+  
+  
+     <div class="lds-ellipsis">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+     
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top bg-gradient-to-r from-fuchsia-50 to-sky-50">
     <div class="container d-flex align-items-center justify-content-between">
@@ -89,7 +100,10 @@
   </header>
   <!-- End Header -->
   <!-- Gradient Background -->
+   <!-- loading animation  -->
 
+
+   
 
   <!-- ======= Hero Section ======= -->
   <section class="bg-gradient-to-r from-fuchsia-50 to-sky-50 top">
@@ -541,7 +555,7 @@
         </div>
 
         <div class="col-lg-8 mt-5 mt-lg-0">
-          <form action="https://formspree.io/f/moqzendb" method="POST" class="email-form">
+          <form action="./contact.php" method="POST" class="email-form">
             <div class="row gy-2 gx-md-3">
               <div class="col-md-6 form-group">
                 <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required />
@@ -561,7 +575,7 @@
               </div>
 
               <div class="text-center col-12">
-                <button type="button" class="btn btn-outline-primary">Send Message</button>
+                <button type="submit" class="btn btn-outline-primary" >Send Message</button>
               </div>
             </div>
           </form>
@@ -620,6 +634,13 @@
       loop: true
 
     })
+
+      var loader = document.getElementsByClassName("lds-ellipsis"); 
+
+      window.addEventListener("load",function(){
+        loader.style.display = "none";
+      })
+
   </script>
 </body>
 

@@ -173,8 +173,8 @@ include('../config.php');
                                                 <th><?php echo $row['email']; ?></th>
                                                 <th><?php echo $row['time']; ?></th>
                                                 <th><a href="../auth.php?userid=<?php echo $row['id']; ?>">
-                                                    <button class="btn btn-primary btn-sm">Approve</button>
-                                                </a></th>
+                                                        <button class="btn btn-primary btn-sm">Approve</button>
+                                                    </a></th>
 
 
                                             </tr>

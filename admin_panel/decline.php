@@ -20,5 +20,3 @@ if (isset($_GET['userid'])) {
         echo "Somthing error";
     }
 }
-
-?>

@@ -140,7 +140,7 @@ include('./config.php');
                   <p><?php echo $row['jobDesc']; ?></p>
                 </div>
                 <div class="col-3 text-lg-end">
-                  <a href="#" class="btn btn-primary stretched-link">Apply</a>
+                  <a href="./jo.php" class="btn btn-primary stretched-link">Apply</a>
                 </div>
               </div>
             </div>
