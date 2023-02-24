@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
@@ -41,24 +40,35 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
+    <title>Document</title>
   </head>
+
   <body>
-    <!-- header section  -->
+    <!-- navbar section -->
     <header
       id="header"
       class="fixed-top bg-gradient-to-r from-fuchsia-50 to-sky-50"
     >
       <div class="container d-flex align-items-center justify-content-between">
-        <img src="./assets/img/logopng.png" alt="" class="logo" />
+        <img
+          src="./assets/img/logopng.png"
+          alt=""
+          class="logo"
+          href="./index.html"
+        />
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
         <nav id="navbar" class="navbar">
           <ul>
             <li>
-              <a class="nav-link scrollto active" href="./index.html">Home</a>
+              <a class="nav-link scrollto active" href="./index.html#hero"
+                >Home</a
+              >
             </li>
-            <li><a class="nav-link scrollto" href="#about">About</a></li>
+            <li>
+              <a class="nav-link scrollto" href="./index.html#about">About</a>
+            </li>
 
             <li class="dropdown">
               <a href="#"
@@ -102,18 +112,118 @@
             </li>
             <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
             <li>
-              <a class="nav-link scrollto" href="./career.html">Career</a>
+              <a class="nav-link scrollto" href="./careers/careers.html"
+                >Career</a
+              >
             </li>
             <li>
-              <a class="nav-link scrollto" href="./tutorials.html">Tutorials</a>
+              <a
+                class="nav-link scrollto"
+                href="https://www.youtube.com/@soulsoftinfotech2503"
+                >Tutorials</a
+              >
             </li>
             <li>
-              <a class="nav-link scrollto" href="./tutorials.html">Downloads</a>
+              <a
+                class="nav-link scrollto"
+                href="http://soulsoftinfotech.com/Downloads.html"
+                >Downloads</a
+              >
             </li>
+            <a href="./adminSign.html"
+              ><button
+                type="button"
+                class="btn btn-outline-primary btn-rounded btn-sm"
+                data-mdb-ripple-color="dark"
+              >
+                Sign In
+              </button></a
+            >
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>
       </div>
     </header>
+
+    <section class="bg-gradient-to-r from-yellow-50 via-blue-50 to-purple-50">
+      <div class="px-5 py-20 mx-auto text-gray-600" data-aos="fade-up">
+        <div
+          class="flex flex-wrap w-full mb-20 flex-col items-center text-center"
+        >
+          <h1 class="text-4xl font-bold title-font mb-2 text-cyan-900">
+            DOWNLOADS
+          </h1>
+          <div class="flex mt-6 justify-center">
+            <div class="w-16 h-1 rounded-full bg-blue-500 inline-flex"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container d-flex">
+        <div
+          class="d-flex col-sm-12 justify-center justify-content-center align-items-center"
+        >
+          <div
+            class="border border-gray-200 p-6 rounded-lg justify-center align-items-center d-flex flex-col section-bg col-sm-4 h-100"
+          >
+            <div class="align-items-center justify-center">
+              <a href=""
+                ><img
+                  src="./assets/img/pngegg (1).png"
+                  alt=""
+                  class="w-60 h-70"
+              /></a>
+            </div>
+
+            <div class="d-flex mt-5">
+              <a
+                href="https://drive.google.com/file/d/1r3nyCEOdlf60hAEzOAUGKpDUMnsrjj-O/view?usp=sharing"
+                ><button class="btn btn-primary btn-sm mr-3">32 Bit</button></a
+              >
+              <a
+                href="https://drive.google.com/file/d/1lMA6HAxshN1ykvgnRgtVYQrsmz_o3xyC/view?usp=sharing"
+                ><button class="btn btn-primary btn-sm">64 Bit</button></a
+              >
+            </div>
+          </div>
+          <div
+            class="border border-gray-200 p-6 rounded-lg justify-center align-items-center d-flex flex-col section-bg col-sm-4 ml-3 h-100"
+          >
+            <div class="align-items-center justify-center">
+              <a href=""
+                ><img
+                  src="./assets/img/SAP-Crystal-Reports-Logo.png"
+                  alt=""
+                  class="w-60 h-70"
+              /></a>
+            </div>
+
+            <div class="d-flex mt-5">
+              <a
+                href="https://drive.google.com/file/d/1r3nyCEOdlf60hAEzOAUGKpDUMnsrjj-O/view?usp=sharing"
+                ><button class="btn btn-primary btn-sm mr-3">32 Bit</button></a
+              >
+              <a
+                href="https://drive.google.com/file/d/1lMA6HAxshN1ykvgnRgtVYQrsmz_o3xyC/view?usp=sharing"
+                ><button class="btn btn-primary btn-sm">64 Bit</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
