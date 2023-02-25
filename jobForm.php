@@ -1,29 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -33,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
 
     <!-- Favicons -->
     <link href="assets/img/logopng.png" rel="icon" />
@@ -63,9 +36,13 @@
 
 
     <!-- form section  -->
+
     <div class="container">
         <h1 class="text-center text-6xl">Job/Hiring Form</h1>
     </div>
+    <a href="./jobDelete.php"><button class="btn btn-primary my-4">
+            Delete Job
+        </button></a>
     <form class="border border-light p-5" action="./jobdata.php" method="POST">
         <div class="d-flex flex-col justify-center align-items-center">
             <div class="container mt-10 mb-4">
@@ -74,26 +51,22 @@
             <div class="col-7">
                 <!-- First name -->
                 <label>Job ID</label>
-                <input type="text" id="fi" class="form-control mb-4" name="jobid" placeholder="Job ID"
-                    required />
+                <input type="text" id="fi" class="form-control mb-4" name="jobid" placeholder="Job ID" required />
             </div>
             <div class="col-7">
                 <!-- First name -->
                 <label>Job Role</label>
-                <input type="text" id="fi" class="form-control mb-4" name="jobrole" placeholder="Job Role"
-                    required />
+                <input type="text" id="fi" class="form-control mb-4" name="jobrole" placeholder="Job Role" required />
             </div>
             <div class="col-7">
                 <!-- First name -->
                 <label>Date</label>
-                <input type="date" id="fi" class="form-control mb-4" name="date" placeholder="Job Role"
-                    required />
+                <input type="date" id="fi" class="form-control mb-4" name="date" placeholder="Job Role" required />
             </div>
             <div class="col-7">
                 <!-- Last name -->
                 <label>Job description</label>
-                <textarea  type="text" id="defaultRegisterFormLastName" class="form-control" placeholder=""
-                    name="jobdesc" required>
+                <textarea type="text" id="defaultRegisterFormLastName" class="form-control" placeholder="" name="jobdesc" required>
                 </textarea>
             </div>
 
@@ -104,6 +77,7 @@
                 </button>
             </div>
         </div>
+
 
 
 

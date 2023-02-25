@@ -173,13 +173,13 @@ include('../config.php');
                                                 <th><?php echo $row['email']; ?></th>
                                                 <th><?php echo $row['time']; ?></th>
                                                 <th><a href="./decline.php?userid=<?php echo $row['id']; ?>">
-                                                    <button class="btn btn-danger btn-sm" >Decline</button>
-                                                </a></th>
+                                                        <button class="btn btn-danger btn-sm">Decline</button>
+                                                    </a></th>
 
 
                                             </tr>
 
- 
+
                                     <?php
                                         }
                                     } else {
