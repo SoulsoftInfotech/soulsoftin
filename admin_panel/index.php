@@ -98,6 +98,10 @@ include('../config.php');
                             <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                             Job Portal
                         </a>
+                        <a class="nav-link" href="./customerCall.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                            Customer Record
+                        </a>
                     </div>
                 </div>
                 <div class="sb-sidenav-footer">
