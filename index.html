@@ -142,8 +142,8 @@
     <div
       class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center bg-gradient-to-r from-fuchsia-50 to-sky-50">
       <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-        <img class="hero object-cover object-center rounded ok" alt="hero" src="./assets/img/5.png"
-          data-aos="fade-left">
+        <img class="hero object-cover object-center rounded ok" alt="hero" src=""
+          data-aos="fade-left" id="ok">
       </div>
       <div
         class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
@@ -640,7 +640,12 @@
       window.addEventListener("load",function(){
         loader.style.display = "none";
       })
-
+      let ok = document.getElementById('ok')
+      let images = ['./assets/img/1.png','./assets/img/2.png','./assets/img/3.png']
+      setInterval(function(){
+        let random = Math.floor(Math.random() * 3);
+        ok.src = images[random];
+      },2500);
   </script>
 </body>
 
