@@ -555,7 +555,7 @@
         </div>
 
         <div class="col-lg-8 mt-5 mt-lg-0">
-          <form action="./contact.php" method="POST" class="email-form">
+          <form method="POST" class="email-form">
             <div class="row gy-2 gx-md-3">
               <div class="col-md-6 form-group">
                 <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required />
@@ -571,11 +571,11 @@
                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required />
               </div>
               <div class="form-group col-12">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" id="message"required></textarea>
               </div>
 
               <div class="text-center col-12">
-                <button type="submit" class="btn btn-outline-primary" >Send Message</button>
+                <button type="submit" class="btn btn-outline-primary" id="contactBtn" >Send Message</button>
               </div>
             </div>
           </form>
@@ -647,6 +647,9 @@
         ok.src = images[random];
       },2500);
   </script>
+  <script src="./index.js"></script>
+  
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 
 </html>
