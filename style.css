@@ -9,7 +9,7 @@ header img {
 
 .ok {
   animation-name: MoveUpDown;
-  animation-duration: 4s;
+  animation-duration: 2.5s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
