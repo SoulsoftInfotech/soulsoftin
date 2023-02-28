@@ -5,7 +5,163 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
   </head>
-  <body></body>
-  <script></script>
+  <body>
+    <div class="container">
+      <br />
+
+      <div class="card bg-light">
+        <article class="card-body mx-auto" style="max-width: 400px">
+          <h4 class="card-title mt-3 text-center">
+            Registration form for Old Customer
+          </h4>
+
+          <p class="divider-text">
+            <span class="bg-light">OR</span>
+          </p>
+          <form method="POST" action="./customer_data.php">
+            <div class="form-group input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="fa fa-user"></i>
+                </span>
+              </div>
+              <input
+                name="custid"
+                class="form-control"
+                placeholder="Customer id"
+                type="text"
+              />
+            </div>
+            <div class="form-group input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="fa fa-user"></i>
+                </span>
+              </div>
+              <input
+                name="fullname"
+                class="form-control"
+                placeholder="Full name"
+                type="text"
+              />
+            </div>
+            <!-- form-group// -->
+            <div class="form-group input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="fa fa-envelope"></i>
+                </span>
+              </div>
+              <input
+                name="email"
+                class="form-control"
+                placeholder="Email address"
+                type="email"
+              />
+            </div>
+            <!-- form-group// -->
+            <div class="form-group input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="fa fa-phone"></i>
+                </span>
+              </div>
+
+              <input
+                name="number"
+                class="form-control"
+                placeholder="Phone number"
+                type="text"
+              />
+            </div>
+            <div class="form-group input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="fa fa-building"></i>
+                </span>
+              </div>
+              <select class="form-control" name="product">
+                <option selected="">Product Purchased</option>
+                <option>SKS</option>
+                <option>Kirana Bazar</option>
+                <option>Pharama-Chemist</option>
+                <option>Shopcare</option>
+              </select>
+            </div>
+            <div class="form-group input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="fa fa-building"></i>
+                </span>
+              </div>
+              <select class="form-control" name="product">
+                <option selected="">Purchased Category</option>
+                <option>Web Based</option>
+                <option>Windows Based</option>
+              </select>
+            </div>
+
+            <small>Product purchase date</small>
+            <div class="form-group input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="fa fa-calendar"></i>
+                </span>
+              </div>
+
+              <input
+                name="date"
+                class="form-control"
+                placeholder="Date of Purchase"
+                type="date"
+              />
+            </div>
+            <!-- form-group// -->
+            <!-- form-group end.// -->
+            <div class="form-group input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="fa fa-lock"></i>
+                </span>
+              </div>
+              <input
+                class="form-control"
+                placeholder="Create password"
+                type="password"
+                name="password"
+              />
+            </div>
+            <!-- form-group// -->
+
+            <!-- form-group// -->
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary btn-block">
+                Create Account
+              </button>
+            </div>
+            <!-- form-group// -->
+          </form>
+        </article>
+      </div>
+      <!-- card.// -->
+    </div>
+    <!--container end.//-->
+
+    <br /><br />
+  </body>
 </html>

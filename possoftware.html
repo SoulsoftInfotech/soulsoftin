@@ -1,134 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet" />
+    <!-- Favicons -->
+    <link href="assets/img/logopng.png" rel="icon" />
+    <link href="assets/img/logopng.png" rel="apple-touch-icon" />
 
-  <!-- Favicons -->
-  <link href="assets/img/logopng.png" rel="icon" />
-  <link href="assets/img/logopng.png" rel="apple-touch-icon" />
+    <!-- Google Fonts -->
 
-  <!-- Google Fonts -->
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="./style.css" rel="stylesheet" />
+  </head>
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet" />
-  <link href="./style.css" rel="stylesheet" />
-</head>
+  <body>
+    <!-- header section  -->
+    <header
+      id="header"
+      class="fixed-top bg-gradient-to-r from-fuchsia-50 to-sky-50"
+    >
+      <div class="container d-flex align-items-center justify-content-between">
+        <a href="./index.html">
+          <img
+            src="./assets/img/logopng.png"
+            alt=""
+            class="logo h-12 w-24"
+            href=""
+          />
+        </a>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
-<body>
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li>
+              <a class="nav-link scrollto active" href="./index.html#hero"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a class="nav-link scrollto" href="./index.html#about">About</a>
+            </li>
 
+            <li class="dropdown">
+              <a href="#"
+                ><span>Services</span> <i class="bi bi-chevron-down"></i
+              ></a>
+              <ul>
+                <li><a href="./possoftware.html">POS System Softwares</a></li>
 
-  <!-- header section  -->
-  <header id="header" class="fixed-top bg-gradient-to-r from-fuchsia-50 to-sky-50">
-    <div class="container d-flex align-items-center justify-content-between">
-      <img src="./assets/img/logopng.png" alt="" class="" href="./index.html">
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+                <li><a href="./webdev.html">Web Development</a></li>
+                <li><a href="./appdev.html">App Developement</a></li>
+                <li><a href="">SalesForce</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#"
+                ><span>Products</span> <i class="bi bi-chevron-down"></i
+              ></a>
+              <ul>
+                <li>
+                  <a href="./product1.html"
+                    >Account and Billing Software(Shopcare)</a
+                  >
+                </li>
 
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="./index.html#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="./index.html#about">About</a></li>
-
-          <li class="dropdown">
-            <a href="#"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="./possoftware.html">POS System Softwares</a></li>
-
-              <li><a href="./webdev.html">Web Development</a></li>
-              <li><a href="./appdev.html">App Developement</a></li>
-              <li><a href="">SalesForce</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#"><span>Our Products</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="./product1.html">Account and Billing Software(Shopcare)</a></li>
-
-              <li><a href="./prduct2.html">Agro mall and Herbs Software(Shetkari)</a></li>
-              <li><a href="./prduct3.html">Billing,Inventory and Account Software(Kirana Bazar)</a></li>
-              <li><a href="./prduct4.html">Pharmacy Billing Software (Pharma Chemist Vision)</a></li>
-            </ul>
-          </li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-          <li><a class="nav-link scrollto" href="./career.html">Career</a></li>
-          <li><a class="nav-link scrollto" href="https://www.youtube.com/@soulsoftinfotech2503">Tutorials</a></li>
-          <li><a class="nav-link scrollto" href="./download.html">Downloads</a></li>
-          <li class="dropdown">
-          <li class="dropdown">
-            <a href="#"><span>Sign Up</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="./cSignIn.html">Log in(As Cutomer)</a></li>
-
-              <li><a href="./adminSign.html">Log in(As Admin)</a></li>
-            </ul>
-          </li>
-
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav>
-
-    </div>
-  </header>
-
-
-  <!-- Product Data -->
-  <section class="text-gray-600 bg-gradient-to-r from-purple-50 to-pink-50">
-    <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center" data-aos="fade-up">
-      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0" data-aos="flip-up">
-        <img class="change object-cover object-center rounded w-400" alt="hero"
-          src="./assets/img/Untitled design (3).png" />
+                <li>
+                  <a href="./prduct2.html"
+                    >Agro mall and Herbs Software(Shetkari)</a
+                  >
+                </li>
+                <li>
+                  <a href="./prduct3.html"
+                    >Billing,Inventory and Account Software(Kirana Bazar)</a
+                  >
+                </li>
+                <li>
+                  <a href="./prduct4.html"
+                    >Pharmacy Billing Software (Pharma Chemist Vision)</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+            <li><a class="nav-link scrollto" href="./career.php">Career</a></li>
+            <li>
+              <a
+                class="nav-link scrollto"
+                href="https://www.youtube.com/@soulsoftinfotech2503"
+                >Tutorials</a
+              >
+            </li>
+            <li>
+              <a class="nav-link scrollto" href="./download.html">Downloads</a>
+            </li>
+            <a href="./adminSign.html"
+              ><button
+                type="button"
+                class="btn btn-outline-primary btn-rounded btn-sm"
+                data-mdb-ripple-color="dark"
+              >
+                Sign In
+              </button></a
+            >
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
       </div>
+    </header>
+
+    <!-- Product Data -->
+    <section class="text-gray-600 bg-gradient-to-r from-purple-50 to-pink-50">
       <div
-        class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center justify-center"
-        data-aos="fade-left">
-        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 hover:bg-blue-100">
-          POS(Point of Sales System) System Software
-        </h1>
-        <p class="mb-8 leading-relaxed">
-          You've built an amazing business. We make sure people will remember
-          it. We help businesses like yours define what makes them unique and
-          turn that into a best-in-class online experience. These experiences
-          drive online growth and ultimately improve the bottom line.
-        </p>
-        <p class="mb-8 leading-relaxed">
-          POS Software for all businesses like restaurant, retail to manage
-          sale records, customer details. Get best POS Software System from
-          top POS Software developers, companies at best price in India.
-        </p>
+        class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center"
+        data-aos="fade-up"
+      >
+        <div
+          class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0"
+          data-aos="flip-up"
+        >
+          <img
+            class="change object-cover object-center rounded w-400"
+            alt="hero"
+            src="./assets/img/Untitled design (3).png"
+          />
+        </div>
+        <div
+          class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center justify-center"
+          data-aos="fade-left"
+        >
+          <h1
+            class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 hover:bg-blue-100"
+          >
+            POS(Point of Sales System) System Software
+          </h1>
+          <p class="mb-8 leading-relaxed">
+            You've built an amazing business. We make sure people will remember
+            it. We help businesses like yours define what makes them unique and
+            turn that into a best-in-class online experience. These experiences
+            drive online growth and ultimately improve the bottom line.
+          </p>
+          <p class="mb-8 leading-relaxed">
+            POS Software for all businesses like restaurant, retail to manage
+            sale records, customer details. Get best POS Software System from
+            top POS Software developers, companies at best price in India.
+          </p>
+        </div>
       </div>
-    </div>
-  </section>
-</body>
-<!-- Vendor JS Files -->
-<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-<script src="assets/vendor/aos/aos.js"></script>
-<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-<script src="assets/vendor/php-email-form/validate.js"></script>
+    </section>
+  </body>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
 
-<!-- Template Main JS File -->
-<script src="assets/js/main.js"></script>
-<script src="./index.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-<script src="assets/js/main.js"></script>
-<script src="https://cdn.tailwindcss.com"></script>
-
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="./index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
 </html>
