@@ -64,7 +64,7 @@ include('./config.php');
               </ul>
             </li>
             <li class="dropdown">
-              <a href="#"><span>Our Products</span> <i class="bi bi-chevron-down"></i></a>
+              <a href="#"><span>Products</span> <i class="bi bi-chevron-down"></i></a>
               <ul>
                 <li><a href="./product1.html">Account and Billing Software(Shopcare)</a></li>
 
@@ -74,9 +74,9 @@ include('./config.php');
               </ul>
             </li>
             <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-            <li><a class="nav-link scrollto" href="./career.html">Career</a></li>
+            <li><a class="nav-link scrollto" href="./career.php">Career</a></li>
             <li><a class="nav-link scrollto" href="https://www.youtube.com/@soulsoftinfotech2503">Tutorials</a></li>
-            <li><a class="nav-link scrollto" href="http://soulsoftinfotech.com/Downloads.html">Downloads</a></li>
+            <li><a class="nav-link scrollto" href="./download.html">Downloads</a></li>
             <a href="./adminSign.html"><button type="button" class="btn btn-outline-primary btn-rounded btn-sm" data-mdb-ripple-color="dark">Sign In</button></a>
 
 
@@ -85,7 +85,6 @@ include('./config.php');
         </nav>
 
       </div>
-
     </header>
   </section>
 
