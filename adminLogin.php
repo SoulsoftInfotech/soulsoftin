@@ -1,6 +1,5 @@
 <?php
 include('config.php');
-
 // $firstname = $_POST['first_name'];
 // $lastname = $_POST['last_name'];
 $email = $_POST['email'];
