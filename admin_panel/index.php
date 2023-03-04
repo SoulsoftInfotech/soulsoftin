@@ -106,14 +106,12 @@ include('../config.php');
                             <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                             Customer Data
                         </a>
-                        <a class="nav-link" href="./emplyForm.php">
+                        <a class="nav-link" href="../php-etms/index.php">
                             <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
-                            Employee Registration
+                            ERM Portal
                         </a>
-                        <a class="nav-link" href="./regEmpTable.php">
-                            <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
-                            Registered Employee
-                        </a>
+
+
                     </div>
                 </div>
                 <div class="sb-sidenav-footer">
